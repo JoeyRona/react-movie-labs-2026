@@ -22,7 +22,7 @@ const formControl =
 
 export default function FilterMoviesCard(props) {
 
-  const [genres, setGenres] = useState[{id: '0', name: "All"}] 
+  const [genres, setGenres] = useState([{id: '0', name: "All"}] )
 
   useEffect(() => {
     fetch(
@@ -42,6 +42,7 @@ export default function FilterMoviesCard(props) {
     e.preventDefault()
     props.onUserInput(type, value)
   };
+
   const handleTextChange = e => {
     handleChange(e, "name", e.target.value)
   }

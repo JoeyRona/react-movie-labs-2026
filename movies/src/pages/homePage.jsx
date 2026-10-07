@@ -28,7 +28,7 @@ const HomePage = () => {
 
   let displayedMovies = movies
   .filter((m) => {
-    return m.title.tolowerCase().search(nameFilter.toLowerCase()) !== -1;
+    return m.title.toLowerCase().search(nameFilter.toLowerCase()) !== -1;
   })
   .filter((m) => {
     return genreId > 0 ? m.genre_ids.includes(genreId) : true;
@@ -37,7 +37,7 @@ const HomePage = () => {
   const handleChange = (type, value) => {
     if (type === "name") setNameFilter(value);
     else setGenreFilter(value);
-  }
+  };
 
   return (
     <Grid container>
