@@ -15,16 +15,13 @@ import img from '../../images/film-poster-placeholder.png'
 import { Link } from "react-router";
 import Avatar from '@mui/material/Avatar';
 
-
-
-
- const handleAddToFavorite = (e) => {
+export default function MovieCard(props) {
+  const movie = props.movie;
+   const handleAddToFavorite = (e) => {
     e.preventDefault();
     props.selectFavorite(movie.id);
   };
-
-export default function MovieCard(props) {
-  const movie = props.movie;
+  
   return (
     <Card>
  <CardHeader
