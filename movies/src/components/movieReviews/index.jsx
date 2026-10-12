@@ -1,4 +1,4 @@
-import React, { useEffect, useState }  from "react";
+import { useEffect, useState }  from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -8,7 +8,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { Link } from "react-router";
 import { getMovieReviews } from "../../api/tmdb-api";
-import { excerpt } from "../../util/util";
+import { excerpt } from "../../util";
 
 export default function MovieReviews({ movie }) {
   const [reviews, setReviews] = useState([]);
