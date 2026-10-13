@@ -57,7 +57,14 @@ const [drawerOpen, setDrawerOpen] = useState(false);
           label={`${movie.vote_average} (${movie.vote_count})`}
         />
         <Chip label={`Released: ${movie.release_date}`} />
-      </Paper>
+ </Paper>
+         <Paper component="ul" sx={{...root}}>
+         <Chip label="Production Countries" sx={{...chip}} color="primary"/>
+        <Chip label="United States" sx={{...chip}}/>
+
+    </Paper>
+        
+
       <Fab
         color="secondary"
         variant="extended"
