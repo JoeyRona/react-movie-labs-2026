@@ -15,9 +15,6 @@ import { getGenres } from "../../api/tmdb-api";
 import { useQuery } from '@tanstack/react-query';
 import Spinner from '../spinner';
 
-
-
-
 const formControl = 
   {
     margin: 1,
